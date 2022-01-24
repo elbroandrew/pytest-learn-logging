@@ -1,17 +1,17 @@
 import logging
 import pytest
 from _pytest.runner import CallInfo
-from configparser import ConfigParser
+from configparser import SafeConfigParser
 
 
 
 @pytest.fixture(scope="function", autouse=False)
 def base_url():
     config_file = 'app_config.ini'
-    config = ConfigParser()
-    config.read(config_file)
+    parser = SafeConfigParser()
+    parser.read(config_file)
 
-    return config['url']['httpbin']
+    return parser.get('httpbin', 'url')
 
 
 def pytest_exception_interact(node, call: CallInfo, report):
