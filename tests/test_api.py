@@ -1,14 +1,10 @@
 import requests
+from configparser import ConfigParser
+import pytest
+from jsonschema import validate
 
 
-def test_get():
-    try:
-        res = requests.get("https://httpbin.org/headers")
-    except requests.exceptions.Timeout as t:
-        raise TimeoutError(t)
-    except requests.exceptions.RequestException as e:
-        raise requests.exceptions.RequestException(e)
-
-
+def test_get_headers(base_url):
+    res = requests.get(f"{base_url}/headers")
     assert 200 == res.status_code
 
