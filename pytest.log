@@ -1,4 +1,4 @@
-2022-01-24 17:53:18 [    INFO] Testing status code 200 -- send request to https://httpbin.org/headers (test_api.py:9)
-2022-01-24 17:53:18 [    INFO] Starting new HTTPS connection (1): httpbin.org (connectionpool.py:734)
-2022-01-24 17:53:19 [    INFO] assert 200 == 200 (test_api.py:18)
-2022-01-24 17:53:19 [    INFO] Done. (test_api.py:19)
+2022-01-24 18:00:06 [    INFO] Testing status code 200 -- send request to https://httpbin.org/headers (test_api.py:9)
+2022-01-24 18:00:06 [    INFO] Starting new HTTPS connection (1): httpbin.org (connectionpool.py:734)
+2022-01-24 18:00:07 [    INFO] assert 200 == 200 status code (test_api.py:14)
+2022-01-24 18:00:07 [    INFO] Done. (test_api.py:15)

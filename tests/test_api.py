@@ -11,12 +11,12 @@ def test_get_headers(base_url):
 
     try:
         assert 200 == res.status_code
+        LOGGER.info(f"assert 200 == {res.status_code} -- status code")
+        LOGGER.info("Done.")
+
     except AssertionError as e:
         LOGGER.error(e)
         raise AssertionError
-
-    LOGGER.info(f"assert 200 == {res.status_code} status code")
-    LOGGER.info("Done.")
 
     schema = {
         "type": "object",
