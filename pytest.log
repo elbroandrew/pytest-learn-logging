@@ -1,4 +1,3 @@
-2022-01-24 17:21:24 [    INFO] Testing status code 200 -- send request to /headers (test_api.py:7)
-2022-01-24 17:21:24 [    INFO] Starting new HTTPS connection (1): httpbin.org (connectionpool.py:734)
-2022-01-24 17:21:24 [    INFO] Done. (test_api.py:9)
-2022-01-24 17:21:25 [   ERROR] <ExceptionInfo <ValidationError: "'headerss' is a required property"> tblen=2> (conftest.py:20)
+2022-01-24 17:27:21 [    INFO] Testing status code 200 -- send request to /headers (test_api.py:7)
+2022-01-24 17:27:21 [    INFO] Starting new HTTPS connection (1): httpbin.org (connectionpool.py:734)
+2022-01-24 17:27:22 [    INFO] Done. (test_api.py:9)
