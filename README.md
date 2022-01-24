@@ -11,3 +11,7 @@ To run more specific tests ('smoke', 'regression' etc) use `markers`:
 ```
 python3 -m pytest -m <marker_name>
 ```
+To remove .idea folder if it is already in gitignore:
+```
+git rm -r --cached .idea
+```
